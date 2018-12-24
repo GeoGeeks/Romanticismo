@@ -2,18 +2,77 @@
 body{
 	background-image: url(../pics/fondo.jpg);
 }
+.sj-book #mapaTodo{
+	margin-left: 20px;
+	margin-top: -40px;
+	width: 90%;
+}
+
+
+.sj-book #info {
+		background-color: black;
+		opacity: 0.75;
+		color: orange;
+		font-size: 12pt;
+		padding: 8px;
+		visibility: hidden;
+	}
+	.sj-book #imagen {
+	border-radius: 150px;
+	width: 200px;
+	height: 200px;
+		}
+html,
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+#mapaTotal {
+	margin-top: 10px;
+	height: 55%;
+	width: 75%;
+}
+.botonesMapaTotal{
+	background-color:#ccafbb;
+	color:black;
+	font-family:Apple Chancery;
+	font-style: italic;
+	border-color:white;
+	padding: 2%;
+	border-radius: 20px;
+	font-weight: 600;
+	margin-top: 15px;
+}.botonesMapaTotal:hover{
+
+	border-color:#ccafbb;
+	background-color:white;
+}
 
 ul, table, form{
 	margin:0;
 	padding:0;
 	overflow:hidden;
 }
+.sj-book iframe{
+	border-color: transparent;
+	margin-top: -110px;
+	margin-left: -50px;
+}
+.sj-book .book-content .prologo{
+	margin-left: 0px;
+	text-align: center;
+	font-style: oblique;
+}
 #canvas{
 	width: 960px;
 	height: 600px;
 	margin-top: 15px;
 }
-
+.table-contents h1{
+color: #662536;
+}
 #book-zoom{
 	-webkit-transition: -webkit-transform 1s;
 	-moz-transition: -moz-transform 1s;
@@ -29,10 +88,10 @@ ul, table, form{
 
 .sj-book h1{
 	font-family: "Stempel-Garamond-W01-Roman";
-	font-size: 38px;
+	font-size: 35px;
 	font-weight: lighter;
-	margin: 20px 0;
-	color: #333;
+	margin: 1px 0;
+	color: #380717;
 	-webkit-text-fill-color: #333;
 	-webkit-text-stroke-color: white;
 	-webkit-text-stroke-width: 0.005em;
@@ -50,9 +109,12 @@ ul, table, form{
 	font-family: "Stempel-Garamond-W01-Roman";
 	font-size:16px;
 	margin:70px 40px;
-
 }
-
+.sj-book .book-content #nombreAutor{
+	font-family: "Stempel-Garamond-W01-Roman";
+	font-size:16px;
+	margin:70px 40px;
+}
 .sj-book blockquote{
 	color:#586078;
 	margin:10px 0;
@@ -92,8 +154,13 @@ ul, table, form{
 
 .sj-book .book-content p{
 	text-indent: 18px;
-	margin: 20px 0;
+	margin: 10px 20px;
 	line-height: 22px;
+	text-align: justify;
+	font-style: oblique;
+}
+.sj-book .book-content h1{
+font-style: italic;
 }
 
 .sj-book .left-pic{
@@ -300,20 +367,21 @@ ul, table, form{
 .sj-book .table-contents{
 	font-size:16px;
 	width:300px;
-	margin:80px auto;
-	color:#ccc;
+	margin:80px 0;
 }
 
-.sj-book .table-contents li{
+li{
 	list-style:none;
 	line-height:25px;
+	text-align:left;
+	margin-left: 10px;
 }
 
 .sj-book .table-contents span{
 	float:right;
 }
 
-.sj-book .table-contents a{
+.sj-book .table-contents .links{
 	float:left;
 	width:100%;
 	clear:both;
@@ -323,9 +391,10 @@ ul, table, form{
 	padding:0 10px;
 }
 
-.sj-book .table-contents a:hover{
+
+.sj-book .table-contents .links:hover{
 	background:#CAD1EE;
-	float:left;
+	float:right;
 	width:100%;
 	clear:both;
 	text-decoration:none;
